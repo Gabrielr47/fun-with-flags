@@ -1,0 +1,9 @@
+:root {
+  --main-bg-color: #272727;
+
+  --text-color: #ffffff;
+
+  --sidenav-width: 300px;
+  --sidenav-bg-color: #2d313e;
+  --sidenav-item-hover: var(--main-bg-color);
+}

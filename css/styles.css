@@ -1,57 +1,54 @@
 body {
-    background-color: #272727;
-    color: #FFFFFF;
+  background-color: var(--main-bg-color);
+  color: var(--text-color);
 }
 
 .sidenav {
-    height: 100%;
-    width: 300px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #2D313E;
-    overflow-x: hidden;
-    padding-top: 20px;
-    display: flexbox;
-    flex-direction: column;
+  height: 100%;
+  width: var(--sidenav-width);
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: var(--sidenav-bg-color);
+  overflow-x: hidden;
+  padding-top: 20px;
+  display: flexbox;
+  flex-direction: column;
 }
 
 .sidenav a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #C5C6CA;
-    display: block;
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: var(--text-color);
+  display: block;
 }
 
 .sidenav a:hover {
-    color: #f1f1f1;
+  color: var(--text-color);
+  background-color: var(--sidenav-item-hover);
 }
 
 .logo {
-    align-self: center;
-    width: 200px;
-    margin: 50px
+  width: 200px;
+  margin: 50px;
 }
 
 .icons {
-    width: 25px;
+  width: 25px;
 }
 
-.main {
-    margin-left: 160px;
-    /* Same as the width of the sidenav */
-    font-size: 28px;
-    /* Increased text to enable scrolling */
-    padding: 0px 10px;
+main {
+  margin-left: var(--sidenav-width);
+  padding: 0px 10px;
 }
 
 @media screen and (max-height: 450px) {
-    .sidenav {
-        padding-top: 15px;
-    }
-    .sidenav a {
-        font-size: 18px;
-    }
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
 }
