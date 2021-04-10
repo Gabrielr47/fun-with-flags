@@ -1,6 +1,15 @@
 body {
   background-color: var(--main-bg-color);
   color: var(--text-color);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 500;
 }
 
 .sidenav {
@@ -17,12 +26,18 @@ body {
   flex-direction: column;
 }
 
+.sidenav h2 {
+  font-size: var(--sidenav-title-size);
+  padding: var(--sidenav-padding);
+}
+
 .sidenav a {
-  padding: 6px 8px 6px 16px;
+  padding: var(--sidenav-padding);
   text-decoration: none;
-  font-size: 25px;
+  font-size: var(--sidenav-item-size);
   color: var(--text-color);
-  display: block;
+  display: flex;
+  align-items: center;
 }
 
 .sidenav a:hover {
@@ -37,6 +52,7 @@ body {
 
 .icons {
   width: 25px;
+  margin-right: 10px;
 }
 
 main {
@@ -44,11 +60,6 @@ main {
   padding: 0px 10px;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px;
-  }
-  .sidenav a {
-    font-size: 18px;
-  }
+main h1 {
+  font-size: var(--main-title-size);
 }

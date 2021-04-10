@@ -1,9 +1,14 @@
 :root {
-  --main-bg-color: #272727;
-
   --text-color: #ffffff;
+  --font-base-size: 1rem;
+
+  --main-bg-color: #272727;
+  --main-title-size: calc(var(--font-base-size) + 1rem);
 
   --sidenav-width: 300px;
   --sidenav-bg-color: #2d313e;
+  --sidenav-title-size: calc(var(--font-base-size) + 0.5rem);
   --sidenav-item-hover: var(--main-bg-color);
+  --sidenav-item-size: var(--font-base-size);
+  --sidenav-padding: 6px 8px 6px 16px;
 }
