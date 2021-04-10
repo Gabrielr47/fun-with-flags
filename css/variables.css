@@ -12,4 +12,7 @@
   --sidenav-item-hover: var(--main-bg-color);
   --sidenav-item-size: var(--font-base-size);
   --sidenav-padding: 6px 8px 6px 16px;
+
+  --card-bg-color: #3c3c3c;
+  --card-border-radius: 1rem;
 }
