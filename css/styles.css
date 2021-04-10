@@ -22,8 +22,8 @@ h4 {
   background-color: var(--sidenav-bg-color);
   overflow-x: hidden;
   padding-top: 20px;
-  display: flexbox;
   flex-direction: column;
+  box-shadow: var(--sidenav-shadow);
 }
 
 .sidenav h2 {

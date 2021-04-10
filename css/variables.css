@@ -7,6 +7,7 @@
 
   --sidenav-width: 300px;
   --sidenav-bg-color: #2d313e;
+  --sidenav-shadow: 3px 4px 6px rgba(0, 0, 0, 20%);
   --sidenav-title-size: calc(var(--font-base-size) + 0.5rem);
   --sidenav-item-hover: var(--main-bg-color);
   --sidenav-item-size: var(--font-base-size);
