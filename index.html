@@ -14,43 +14,18 @@
     />
     <link rel="stylesheet" href="css/variables.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/sidenav/sidenav-component.css" />
+    <link rel="stylesheet" href="css/card/card-component.css" />
   </head>
 
   <body>
-    <nav class="sidenav">
-      <img class="logo" src="images/logo.svg" alt="" />
-      <h2>Categories</h2>
-      <a href="#">
-        <img class="icons" src="images/icons/globe.png" alt="" />
-        All Country Flags
-      </a>
-      <a href="#">
-        <img class="icons" src="images/icons/start.png" alt="" />
-        Most Famous Flags
-      </a>
-      <a href="#">
-        <img class="icons" src="images/icons/light.png" alt="" />
-        Flag Facts
-      </a>
-      <a href="#">
-        <img class="icons" src="images/icons/continents.png" alt="" />
-        Flags By Continent
-      </a>
-      <a href="#">
-        <img class="icons" src="images/icons/color.png" alt="" />
-        All About Flag Colors
-      </a>
-      <a href="#">
-        <img class="icons" src="images/icons/organization.png" alt="" />
-        Flags Of Organisations
-      </a>
-      <item-component></item-component>
-    </nav>
-
+    <sidenav-component></sidenav-component>
     <main>
       <h1>All Country Flags</h1>
       <card-component></card-component>
     </main>
+    <script src="js/sidenav/sidenav-mock.js"></script>
+    <script src="js/sidenav/sidenav-component.js"></script>
     <script src="js/card/card-mock.js"></script>
     <script src="js/card/card-component.js"></script>
   </body>

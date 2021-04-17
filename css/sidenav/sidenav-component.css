@@ -1,0 +1,42 @@
+.sidenav {
+  height: 100%;
+  width: var(--sidenav-width);
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: var(--sidenav-bg-color);
+  overflow-x: hidden;
+  padding-top: 20px;
+  flex-direction: column;
+  box-shadow: var(--sidenav-shadow);
+}
+
+.sidenav h2 {
+  font-size: var(--sidenav-title-size);
+  padding: var(--sidenav-padding);
+}
+
+.sidenav a {
+  padding: var(--sidenav-padding);
+  text-decoration: none;
+  font-size: var(--sidenav-item-size);
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+}
+
+.sidenav a:hover {
+  color: var(--text-color);
+  background-color: var(--sidenav-item-hover);
+}
+
+.sidenav .logo {
+  width: 200px;
+  margin: 50px;
+}
+
+.sidenav .icons {
+  width: 25px;
+  margin-right: 10px;
+}

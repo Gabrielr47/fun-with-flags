@@ -1,0 +1,21 @@
+card-component {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+card-component .card {
+  background-color: var(--card-bg-color);
+  width: 250px;
+  border-radius: var(--card-border-radius);
+  padding: 1rem;
+  margin: 5px;
+}
+
+card-component .card img {
+  width: 100%;
+  border-radius: var(--card-border-radius);
+}
+
+card-component .card-content {
+  text-align: center;
+}

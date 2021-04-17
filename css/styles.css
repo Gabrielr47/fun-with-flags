@@ -12,49 +12,6 @@ h4 {
   font-weight: 500;
 }
 
-.sidenav {
-  height: 100%;
-  width: var(--sidenav-width);
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: var(--sidenav-bg-color);
-  overflow-x: hidden;
-  padding-top: 20px;
-  flex-direction: column;
-  box-shadow: var(--sidenav-shadow);
-}
-
-.sidenav h2 {
-  font-size: var(--sidenav-title-size);
-  padding: var(--sidenav-padding);
-}
-
-.sidenav a {
-  padding: var(--sidenav-padding);
-  text-decoration: none;
-  font-size: var(--sidenav-item-size);
-  color: var(--text-color);
-  display: flex;
-  align-items: center;
-}
-
-.sidenav a:hover {
-  color: var(--text-color);
-  background-color: var(--sidenav-item-hover);
-}
-
-.logo {
-  width: 200px;
-  margin: 50px;
-}
-
-.icons {
-  width: 25px;
-  margin-right: 10px;
-}
-
 main {
   margin-left: var(--sidenav-width);
   padding: 0px 10px;
@@ -62,26 +19,4 @@ main {
 
 main h1 {
   font-size: var(--main-title-size);
-}
-
-card-component {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-card-component .card {
-  background-color: var(--card-bg-color);
-  width: 250px;
-  border-radius: var(--card-border-radius);
-  padding: 1rem;
-  margin: 5px;
-}
-
-card-component .card img {
-  width: 100%;
-  border-radius: var(--card-border-radius);
-}
-
-card-component .card-content {
-  text-align: center;
 }
