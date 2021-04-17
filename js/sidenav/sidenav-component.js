@@ -1,7 +1,32 @@
+function closeNav() {
+  const sidenavClosedWidth = "0";
+  document.querySelectorAll(".sidenav")[0].style.width = sidenavClosedWidth;
+  document.documentElement.style.setProperty(
+    "--sidenav-width",
+    sidenavClosedWidth
+  );
+
+  document.querySelectorAll(".open-btn")[0].style.display = "block";
+  document.querySelectorAll(".close-btn")[0].style.display = "none";
+}
+
+function openNav() {
+  const sidenavClosedWidth = "300px";
+  document.querySelectorAll(".sidenav")[0].style.width = sidenavClosedWidth;
+  document.documentElement.style.setProperty(
+    "--sidenav-width",
+    sidenavClosedWidth
+  );
+
+  document.querySelectorAll(".open-btn")[0].style.display = "none";
+  document.querySelectorAll(".close-btn")[0].style.display = "block";
+}
+
 class SidenavComponent extends HTMLElement {
   connectedCallback() {
     let sidenav = `
     <nav class="sidenav">
+      <button class="close-btn" type="button" onclick="closeNav()">&times;</button>
       <img class="logo" src="${sidenavMock.logoUrl}" alt="${sidenavMock.logoAlt}" />
       <h2>${sidenavMock.title}</h2>
     `;
@@ -17,5 +42,14 @@ class SidenavComponent extends HTMLElement {
     this.innerHTML = `${sidenav} </nav>`;
   }
 }
+class SidenavHamburgerMenuComponent extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `<button class="open-btn" type="button" onclick="openNav()">&#9776;</button>`;
+  }
+}
 
 customElements.define("sidenav-component", SidenavComponent);
+customElements.define(
+  "sidenav-hamburger-menu-component",
+  SidenavHamburgerMenuComponent
+);

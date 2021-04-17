@@ -12,6 +12,24 @@
   box-shadow: var(--sidenav-shadow);
 }
 
+.sidenav .close-btn,
+.open-btn {
+  background: inherit;
+  color: inherit;
+  border: 0;
+  font-size: 2.5rem;
+  outline: none;
+  cursor: pointer;
+  top: 0px;
+  margin: 0;
+  padding: 0;
+}
+
+.sidenav .close-btn {
+  right: 1rem;
+  position: absolute;
+}
+
 .sidenav h2 {
   font-size: var(--sidenav-title-size);
   padding: var(--sidenav-padding);
@@ -39,4 +57,22 @@
 .sidenav .icons {
   width: 25px;
   margin-right: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .open-btn {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .open-btn {
+    display: block;
+  }
+  .sidenav {
+    width: 0px;
+  }
+  main {
+    margin-left: 0px;
+  }
 }
