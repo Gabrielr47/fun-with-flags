@@ -42,14 +42,15 @@ class SidenavComponent extends HTMLElement {
     this.innerHTML = `${sidenav} </nav>`;
   }
 }
-class SidenavHamburgerMenuComponent extends HTMLElement {
+class HamburgerMenuComponent extends HTMLElement {
   connectedCallback() {
-    this.innerHTML = `<button class="open-btn" type="button" onclick="openNav()">&#9776;</button>`;
+    this.innerHTML = `
+    <div class="hamburger-menu">
+      <button class="open-btn" type="button" onclick="openNav()">&#9776;</button>
+    </div>
+    `;
   }
 }
 
 customElements.define("sidenav-component", SidenavComponent);
-customElements.define(
-  "sidenav-hamburger-menu-component",
-  SidenavHamburgerMenuComponent
-);
+customElements.define("hamburger-menu-component", HamburgerMenuComponent);

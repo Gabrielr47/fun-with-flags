@@ -5,10 +5,12 @@ card-component {
 
 card-component .card {
   background-color: var(--card-bg-color);
-  width: 250px;
+  width: var(--card-width);
+  max-width: var(--card-width);
   border-radius: var(--card-border-radius);
   padding: 1rem;
   margin: 5px;
+  flex: 1 0 var(--card-width);
 }
 
 card-component .card img {
@@ -18,4 +20,14 @@ card-component .card img {
 
 card-component .card-content {
   text-align: center;
+}
+
+.hamburger-menu {
+  height: 4rem;
+}
+
+@media only screen and (max-width: 768px) {
+  card-component .card {
+    flex: 1 0 30%;
+  }
 }
