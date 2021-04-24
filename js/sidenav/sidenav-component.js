@@ -42,15 +42,5 @@ class SidenavComponent extends HTMLElement {
     this.innerHTML = `${sidenav} </nav>`;
   }
 }
-class HamburgerMenuComponent extends HTMLElement {
-  connectedCallback() {
-    this.innerHTML = `
-    <div class="hamburger-menu">
-      <button class="open-btn" type="button" onclick="openNav()">&#9776;</button>
-    </div>
-    `;
-  }
-}
 
 customElements.define("sidenav-component", SidenavComponent);
-customElements.define("hamburger-menu-component", HamburgerMenuComponent);

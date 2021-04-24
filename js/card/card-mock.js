@@ -1,34 +1,98 @@
 const cardMock = [
   {
-    name: "Brazil",
-    imageUrl: "images/flags/brazil.png",
+    title: "Brazil",
+    imageUrl: "images/flags/br.svg",
   },
   {
-    name: "Estonia",
-    imageUrl: "images/flags/estonia.png",
+    title: "Estonia",
+    imageUrl: "images/flags/ee.svg",
   },
   {
-    name: "China",
-    imageUrl: "images/flags/china.png",
+    title: "China",
+    imageUrl: "images/flags/cn.svg",
   },
   {
-    name: "India",
-    imageUrl: "images/flags/india.png",
+    title: "India",
+    imageUrl: "images/flags/in.svg",
   },
   {
-    name: "Sweden",
-    imageUrl: "images/flags/sweden.png",
+    title: "Sweden",
+    imageUrl: "images/flags/se.svg",
   },
   {
-    name: "South Korea",
-    imageUrl: "images/flags/south-korea.png",
+    title: "South Korea",
+    imageUrl: "images/flags/kr.svg",
   },
   {
-    name: "United Kingdom",
-    imageUrl: "images/flags/united-kingdom.png",
+    title: "United Kingdom",
+    imageUrl: "images/flags/gb.svg",
   },
   {
-    name: "Mexico",
-    imageUrl: "images/flags/mexico.png",
+    title: "Mexico",
+    imageUrl: "images/flags/mx.svg",
+  },
+  {
+    title: "Malta",
+    imageUrl: "images/flags/mt.svg",
+  },
+  {
+    title: "Afghanistan",
+    imageUrl: "images/flags/af.svg",
+  },
+  {
+    title: "Albania",
+    imageUrl: "images/flags/al.svg",
+  },
+  {
+    title: "Algeria",
+    imageUrl: "images/flags/dz.svg",
+  },
+  {
+    title: "American Samoa",
+    imageUrl: "images/flags/as.svg",
+  },
+  {
+    title: "Andorra",
+    imageUrl: "images/flags/ad.svg",
+  },
+  {
+    title: "Angola",
+    imageUrl: "images/flags/ao.svg",
+  },
+  {
+    title: "Anguilla",
+    imageUrl: "images/flags/ai.svg",
+  },
+  {
+    title: "Antarctica",
+    imageUrl: "images/flags/aq.svg",
+  },
+  {
+    title: "Antigua and Barbuda",
+    imageUrl: "images/flags/ag.svg",
+  },
+  {
+    title: "Armenia",
+    imageUrl: "images/flags/am.svg",
+  },
+  {
+    title: "Aruba",
+    imageUrl: "images/flags/aw.svg",
+  },
+  {
+    title: "Australia",
+    imageUrl: "images/flags/au.svg",
+  },
+  {
+    title: "Austria",
+    imageUrl: "images/flags/at.svg",
+  },
+  {
+    title: "Azerbaijan",
+    imageUrl: "images/flags/az.svg",
+  },
+  {
+    title: "Bahamas",
+    imageUrl: "images/flags/bs.svg",
   },
 ];
