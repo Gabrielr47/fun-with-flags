@@ -1,11 +1,15 @@
+function openCardModal() {
+  console.log("opened");
+}
+
 class CardComponent extends HTMLElement {
   connectedCallback() {
     cardMock.forEach((card) => {
       this.innerHTML += `
-      <div class="card">
-      <img class="card-img-top" src="${card.imageUrl}" alt="Flag of ${card.title}" loading="lazy">
+      <div class="card" onclick="openCardModal()">
+      <img class="card-img-top" src="images/flags/${card.code}.svg" alt="Flag of ${card.name}" loading="lazy">
       <div class="card-body">
-        <h5 class="card-title">${card.title}</h5>
+        <h5 class="card-title">${card.name}</h5>
         <p class="card-text"></p>
       </div>
       </div>

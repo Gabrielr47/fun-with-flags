@@ -1,6 +1,7 @@
 card-component {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 card-component .card {
@@ -8,9 +9,10 @@ card-component .card {
   width: var(--card-width);
   max-width: var(--card-width);
   border-radius: var(--card-border-radius);
-  padding: 1rem;
+  padding: 1rem 1rem .2rem;
   margin: 5px;
   flex: 1 0 var(--card-width);
+  cursor: pointer;
 }
 
 card-component .card img {
@@ -20,6 +22,7 @@ card-component .card img {
 }
 
 .card-title {
+  margin: .5rem 0;
   font-size: 1rem;
   font-weight: 700;
   text-align: center;

@@ -11,11 +11,11 @@ function closeNav() {
 }
 
 function openNav() {
-  const sidenavClosedWidth = "300px";
-  document.querySelectorAll(".sidenav")[0].style.width = sidenavClosedWidth;
+  const sidenavOpenedWidth = "300px";
+  document.querySelectorAll(".sidenav")[0].style.width = sidenavOpenedWidth;
   document.documentElement.style.setProperty(
     "--sidenav-width",
-    sidenavClosedWidth
+    sidenavOpenedWidth
   );
 
   document.querySelectorAll(".open-btn")[0].style.display = "none";
